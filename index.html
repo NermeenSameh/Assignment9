@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="mainSection py-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="py-2 position-relative  ">
+                Bookmarker
+            </h1>
+
+            <div
+                class="BookmarkBody w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="input1 w-100 d-flex flex-column justify-content-center">
+                    <label class="pb-3">
+                        <i class="fa-solid fa-book pe-3"></i>
+                        Site Name
+                    </label>
+                    <input type="text" name="siteName" id="sideNameId" placeholder="Bookmark Name" class="form-control">
+                </div>
+                <div class="input1 w-100 d-flex flex-column justify-content-center">
+                    <label class="pb-3">
+                        <i class="fa-solid fa-link pe-3"></i>
+                        Site URL
+                    </label>
+                    <input type="url" name="websiteUrl" id="websiteUrlId" placeholder="Website URL"
+                        class="form-control">
+                </div>
+                <button onclick="addSiteName()" class="btn btn-submit   px-5" id="sumbitId">Submit</button>
+            </div>
+
+            <table class="my-5 table w-100 mx-auto bg-white">
+
+                <thead class="text-black text-center">
+                    <th class="fw-bold">Index</th>
+                    <th class="fw-bold">Website Name</th>
+                    <th class="fw-bold">Visit</th>
+                    <th class="fw-bold"> Delete </th>
+                </thead>
+
+                <tbody id="tBody" class="text-center w-75">
+                   
+                </tbody>
+
+            </table>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
